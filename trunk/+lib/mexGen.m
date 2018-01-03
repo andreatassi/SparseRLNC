@@ -1,0 +1,1 @@
+mex -v CFLAGS='$CFLAGS -std=c99' +lib/+VChooseK/VChooseK.c -output +lib/VChooseK
