@@ -10,5 +10,9 @@ end
 %% Generate results
 batchRunner_VT_2017_00937;
 
+simLib.mexGen;
+batchRunner_VT_2018_02952;
+
 %% Generate all the figures
 getFigs_VT_2017_00937;
+getFigs_VT_2018_02952

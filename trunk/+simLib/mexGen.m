@@ -161,3 +161,8 @@ else
         '-lfifi' '-lcpuid' '-lsak' '-compatibleArrayDims'...
         +simLib/src/C-mexed/getRank.cpp -output +simLib/getRank
 end
+
+% export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6:/usr/lib/x86_64-linux-gnu/libprotobuf.so.9
+mex -v '-I+simLib/src/kodo-20.0.0/bundle_dependencies/boost-abe3de/1.11.0/' +simLib/src/C-mexed/rankProbApp.cpp -output +simLib/rPA
+mex -v '-I+simLib/src/kodo-20.0.0/bundle_dependencies/boost-abe3de/1.11.0/' +simLib/src/C-mexed/fullRankProbApp.cpp -output +simLib/fRPA
+simLib.mexGen_appendix
